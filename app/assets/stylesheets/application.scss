@@ -1,1 +1,30 @@
 @import "bootstrap";
+
+.logo-image {
+  height: 300px
+}
+
+h3 {
+  color: chocolate;
+}
+
+a {
+  color: inherit;
+}
+
+.no-decoration {
+  text-decoration: none;
+}
+
+.with-decoration {
+  text-decoration: none;
+}
+.with-decoration:link {
+  border-bottom: 2px solid chocolate;
+}
+.with-decoration:visited {
+  border-bottom: 2px solid chocolate;
+}
+.with-decoration:hover {
+  border-bottom: 2px solid chocolate;
+}

@@ -38,3 +38,4 @@ group :development, :test do
   gem 'rspec-rails', '~> 4.0.1'
 end
 gem 'rubocop-rails', require: false
+gem 'mini_racer'
