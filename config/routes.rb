@@ -1,5 +1,8 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
-  root to: 'blog#index'
+  root to: 'posts#index'
+
+  resources :posts
+  resources :tags
 end

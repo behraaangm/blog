@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="text-center">
+    <%= link_to root_path, class: 'no-decoration' do %>
+      <%= image_tag 'logo.png', class: 'logo-image' %>
+      <h3>
+        The Grati Dev
+      </h3>
+    <% end %>
+    <p>
+      <%= link_to root_path, class: 'no-decoration' do %> A blog by <% end %> <%= link_to '@behraaang', TWITTER, class: 'with-decoration' %> about <%= link_to 'Ruby', tag_path(id: Tag.where(name: 'Ruby').first_or_create.id), class: 'with-decoration' %>, <%= link_to 'Elixir', tag_path(id: Tag.where(name: 'Elixir').first_or_create.id), class: 'with-decoration' %>, <%= link_to 'React', tag_path(id: Tag.where(name: 'React').first_or_create.id), class: 'with-decoration' %> <%= link_to 'etc', tag_path(id: Tag.where(name: 'etc').first_or_create.id), class: 'with-decoration' %>.
+    </p>
+  </div>
+
+
+  <div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8 text-center main">
+      <%= render @posts %>
+    </div>
+    <div class="col-sm-2"></div>
+  </div>
+</div>
+
