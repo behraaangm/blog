@@ -1,32 +1,16 @@
-<div class="container">
-  <div class="text-center">
-    <%= link_to root_path, class: 'no-decoration' do %>
-      <%= image_tag 'logo.png', class: 'logo-image' %>
-      <h2>
-        The Grati Dev
-      </h2>
-    <% end %>
-    <p>
-      <%= link_to root_path, class: 'no-decoration' do %> A blog by <% end %> <%= link_to '@behraaang', TWITTER, class: 'with-decoration' %> about <%= link_to 'Ruby', tag_path(id: Tag.where(name: 'Ruby').first_or_create.id), class: 'with-decoration' %>, <%= link_to 'Elixir', tag_path(id: Tag.where(name: 'Elixir').first_or_create.id), class: 'with-decoration' %>, <%= link_to 'React', tag_path(id: Tag.where(name: 'React').first_or_create.id), class: 'with-decoration' %> <%= link_to 'etc', tag_path(id: Tag.where(name: 'etc').first_or_create.id), class: 'with-decoration' %>.
-    </p>
+<div class="text-center">
+  <p>
+    <%= link_to root_path, class: 'no-decoration' do %> A blog by <% end %> <%= link_to '@behraaang', TWITTER, class: 'with-decoration' %> about <%= link_to 'Ruby', tag_path(id: Tag.where(name: 'Ruby').first_or_create.id), class: 'with-decoration' %>, <%= link_to 'Elixir', tag_path(id: Tag.where(name: 'Elixir').first_or_create.id), class: 'with-decoration' %>, <%= link_to 'React', tag_path(id: Tag.where(name: 'React').first_or_create.id), class: 'with-decoration' %> <%= link_to 'etc', tag_path(id: Tag.where(name: 'etc').first_or_create.id), class: 'with-decoration' %>.
+  </p>
+</div>
+
+<div class="row">
+  <div class="col-sm-3"></div>
+  <div class="col-sm-6 main">
+
+    <%= render @posts %>
+
   </div>
-
-
-  <div class="row margin-bottom-10">
-    <div class="col-sm-3"></div>
-    <div class="col-sm-6 main">
-      <%= render @posts %>
-
-      <div class="row text-center" style='margin-top: 30px'>
-        Content and design © Behrang Mirzamani (@behraaang).
-        <br/>
-        Grati Dev art by Eila IranParast; other graphics are under a CC BY License.
-      </div>
-    </div>
-    <div class="col-sm-3"></div>
-  </div>
-
-
-
+  <div class="col-sm-3"></div>
 </div>
 

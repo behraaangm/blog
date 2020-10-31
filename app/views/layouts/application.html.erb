@@ -10,6 +10,27 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="container">
+      <div class="text-center">
+        <%= link_to root_path, class: 'no-decoration' do %>
+          <% is_root = controller_name == 'posts' && action_name == 'index' %>
+          <%= image_tag 'logo.png', class: is_root ? 'logo-image' : 'logo-image-small' %>
+          <h2 class="<%= is_root ? '' : 'small' %>">
+            The Grati Dev
+          </h2>
+        <% end %>
+      </div>
+      <%= yield %>
+
+      <div class="row text-center footer">
+        <div>
+          Content and design © Behrang Mirzamani (@behraaang).
+        </div>
+        <div>
+          Grati Dev art by Eila IranParast; other graphics are under a CC BY License.
+        </div>
+      </div>
+
+    </div>
   </body>
 </html>
