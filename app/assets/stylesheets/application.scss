@@ -4,8 +4,9 @@
   height: 300px
 }
 
-h3 {
+h2 {
   color: chocolate;
+  font-weight: bold;
 }
 
 a {
@@ -17,14 +18,19 @@ a {
 }
 
 .with-decoration {
+  font-weight: bold;
   text-decoration: none;
 }
 .with-decoration:link {
-  border-bottom: 2px solid chocolate;
+  border-bottom: 4px solid chocolate;
 }
 .with-decoration:visited {
-  border-bottom: 2px solid chocolate;
+  border-bottom: 4px solid chocolate;
 }
 .with-decoration:hover {
-  border-bottom: 2px solid chocolate;
+  border-bottom: 4px solid chocolate;
+}
+
+* {
+  font-family: "American Typewriter"
 }
