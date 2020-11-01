@@ -39,5 +39,4 @@ group :development, :test do
 end
 gem 'rubocop-rails', require: false
 gem 'mini_racer'
-gem 'trix'
-gem 'trix-rails', require: 'trix'
+gem 'image_processing', '~> 1.0'
