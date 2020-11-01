@@ -4,3 +4,9 @@ This is a blog application with simple tagging, authentication and wysiwig edito
 
 The result could be seen here: https://grati.dev
 
+####Road Map:
+
+- seo friendly
+- disqus comments
+- rtl friendly
+- persian support
