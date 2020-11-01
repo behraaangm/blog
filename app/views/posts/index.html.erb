@@ -1,6 +1,11 @@
 <div class="text-center">
   <p>
-    <%= link_to root_path, class: 'no-decoration' do %> A blog by <% end %> <%= link_to '@behraaang', TWITTER, class: 'with-decoration' %> about <%= link_to 'Ruby', tag_path(id: Tag.where(name: 'Ruby').first_or_create.id), class: 'with-decoration' %>, <%= link_to 'Elixir', tag_path(id: Tag.where(name: 'Elixir').first_or_create.id), class: 'with-decoration' %>, <%= link_to 'React', tag_path(id: Tag.where(name: 'React').first_or_create.id), class: 'with-decoration' %> <%= link_to 'etc', tag_path(id: Tag.where(name: 'etc').first_or_create.id), class: 'with-decoration' %>.
+    <%= link_to root_path, class: 'no-decoration' do %> <%= t('posts.p1') %> <% end %>
+    <%= link_to '@behraaang', TWITTER, class: 'with-decoration' %>
+    <%=t('posts.p2') %> <%= link_to 'Ruby', tag_path(id: Tag.where(name: 'Ruby').first_or_create.id), class: 'with-decoration' %>,
+    <%= link_to 'Elixir', tag_path(id: Tag.where(name: 'Elixir').first_or_create.id), class: 'with-decoration' %>,
+    <%= link_to 'React', tag_path(id: Tag.where(name: 'React').first_or_create.id), class: 'with-decoration' %>
+    <%= link_to 'etc', tag_path(id: Tag.where(name: 'etc').first_or_create.id), class: 'with-decoration' %>.
   </p>
 </div>
 

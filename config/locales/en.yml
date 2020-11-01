@@ -31,3 +31,9 @@
 
 en:
   hello: "Hello world"
+  footer:
+    main: 'Content and design © GratiDev (@gratidev).'
+    p: 'Grati Dev art by Eila @eilai; other graphics are under a CC BY License.'
+  posts:
+    p1: 'A blog by'
+    p2: 'about'
