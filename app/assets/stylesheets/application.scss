@@ -1,5 +1,7 @@
 @import "actiontext";
 @import "bootstrap";
+@import "select2";
+@import "select2-bootstrap";
 
 .logo-image {
   height: 300px
@@ -44,4 +46,8 @@ a {
 
 .footer {
   margin-top: 36px;
+}
+
+.select2-selection {
+  width: 400px
 }

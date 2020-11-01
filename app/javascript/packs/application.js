@@ -4,7 +4,6 @@
 // that code so it'll be compiled.
 
 require("@rails/ujs").start()
-require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
 
@@ -15,10 +14,15 @@ require("channels")
 //
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
-//= require jquery3
+//= require jquery
 //= require popper
 //= require bootstrap-sprockets
 //= require bootstrap
+//= require select2
 
 require("trix")
 require("@rails/actiontext")
+
+$( document ).ready(function() {
+    $( "#post_tag_ids" ).select2({});
+});

@@ -40,3 +40,4 @@ end
 gem 'rubocop-rails', require: false
 gem 'mini_racer'
 gem 'image_processing', '~> 1.0'
+gem "select2-rails"
