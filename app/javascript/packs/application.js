@@ -19,3 +19,6 @@ require("channels")
 //= require popper
 //= require bootstrap-sprockets
 //= require bootstrap
+
+require("trix")
+require("@rails/actiontext")

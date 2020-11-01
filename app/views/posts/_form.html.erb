@@ -4,10 +4,8 @@
     <div>Title</div>
     <%= f.text_field :title, class: 'form-control' %>
   </div>
-  <div class="form-group">
     <div>Body</div>
-    <%= f.text_field :body, class: 'form-control' %>
-  </div>
+    <%= f.rich_text_area :body %>
   <div class="form-group">
     <div>Tags</div>
     <%= f.select :tag_ids, options_for_select(Tag.all.map{|t| [t.name, t.id] }), class: 'form-control' %>
